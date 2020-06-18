@@ -1,0 +1,33 @@
+.wrapper {
+    margin: 0 auto;
+    font-family: arial;
+}
+.list {
+    border: 1px solid ;
+}
+.listItem {
+    display: flex;
+    align-items: center;
+    margin: 5px 0px;
+}
+.statusForm {
+    width: 15px;
+    height: 15px;
+    border-radius: 8px;
+    margin: 5px;
+}
+.statusOn {
+    composes: statusForm;
+    background-color: #afa;
+}
+.statusOff {
+    composes: statusForm;
+    background-color: tomato;
+}
+.name {
+    margin: 5px;
+}
+.avatar{
+    border-radius: 5px;
+    width: 80px;
+}

@@ -1,0 +1,34 @@
+.wrapper {
+    margin: 20px auto;
+    width: 500px;
+    font-family: arial;
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 4px;
+}
+.title {
+    text-align: center;
+}
+.statList {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+.statElement {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    color: #333;
+    text-align: center;
+    border: 1px solid black
+}
+.label {
+    flex-basis: 100%;
+}
+.percentage {
+    font-size: 1.5rem;
+}

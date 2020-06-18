@@ -1,0 +1,23 @@
+.table {
+    margin: 0 auto;
+    width: 70%;
+    outline: 1px solid black;
+    font-family: arial;
+    line-height: 2rem;
+}
+.tableHead {
+    background-color: rgb(146, 175, 253);
+}
+.tableHeadUnit {
+    
+}
+.tableBodyUnit {
+    text-align: center;
+    text-transform: capitalize;
+}
+.row {
+    
+}
+.row:nth-child(2n) {
+    background-color: #eee;
+}
