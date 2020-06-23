@@ -22,7 +22,15 @@ Friends.defaultProps = {
     
 }
 
-Friends.prototype = {
-    
+Friends.propTypes = {
+    friends: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.number,
+            isOnline: PropTypes.bool,
+            avatar: PropTypes.string,
+            name: PropTypes.string
+        })
+    )
 }
+
 export default Friends

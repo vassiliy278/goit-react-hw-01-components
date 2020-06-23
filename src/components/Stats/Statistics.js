@@ -7,10 +7,6 @@ const num = (Math.floor(Math.random() * (255 - 100 + 100) + 100));
 const num2 = (Math.floor(Math.random() * (255 - 100 + 100) + 100));
 const num3 = (Math.floor(Math.random() * (255 - 100 + 100) + 100));
 
-
-
-console.log(num)
-
 function Statistics({title, stats}) {
     return(
         <section className={style.wrapper}>
@@ -28,9 +24,17 @@ function Statistics({title, stats}) {
 }
 
 Statistics.defaultProps = {
+    title: "Digital Formats"
 }
 
-Statistics.prototype = {
-
+Statistics.propTypes = {
+    title: PropTypes.string.isRequired,
+    stats: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.string,
+            label: PropTypes.string,
+            percentage: PropTypes.number
+        })
+    )
 }
 export default Statistics

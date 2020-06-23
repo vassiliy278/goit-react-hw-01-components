@@ -1,5 +1,6 @@
 import React from 'react';
 import style from './transaction.module.css'
+import PropTypes from 'prop-types';
 
 function Transaction({list}) {
     return(
@@ -24,6 +25,15 @@ function Transaction({list}) {
     )
 }
 
-
+Transaction.propTypes = {
+  list: PropTypes.arrayOf(
+    PropTypes.shape({
+      type: PropTypes.string,
+      id: PropTypes.string,
+      amount: PropTypes.string,
+      currency:  PropTypes.string
+    })
+  )
+}
 
 export default Transaction
