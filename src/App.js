@@ -1,4 +1,4 @@
-import React, { useReducer, Fragment } from 'react';
+import React from 'react';
 import Profile from './components/Profile/Profile';
 import user from './data/user.json';
 import Statistics from './components/Stats/Statistics';
