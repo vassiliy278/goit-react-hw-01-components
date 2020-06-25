@@ -7,7 +7,13 @@ function Friends({friends}) {
     return(
             <div className={style.wrapper}>
                 <ul className={style.list}>
-                    <FriendListItem friends={friends}></FriendListItem>
+                    {friends.map(friend => 
+                        <FriendListItem
+                        name={friend.name}
+                        avatar={friend.avatar}
+                        isOnline={friend.isOnline}
+                        key={friend.id}
+                    />)}
                 </ul>    
             </div>
     )
